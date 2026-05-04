@@ -1,3 +1,8 @@
+.pokemon-card-component {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .card-container {
   background-color: #333;
   border: .1rem solid #333;
@@ -17,6 +22,7 @@
   background-color: #fff;
   border: .1rem solid #333;
   border-radius: .625rem;
+  text-align: left;
 
   padding: 1.75rem;
 }
