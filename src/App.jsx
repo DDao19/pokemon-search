@@ -37,11 +37,9 @@ const App = () => {
 
     if (Object.keys(data).length > 0) {
       try {
-        // console.log(data.forms[0].url)
         const response = await fetch(data.forms[0].url)
         const image = await response.json()
         setImage(image.sprites.front_default)
-        // console.log(image.sprites.front_default)
       } catch (err) {
         setImage('')
         console.log("Error: something went wrong")
